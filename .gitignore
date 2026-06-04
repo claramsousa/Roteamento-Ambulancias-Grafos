@@ -1,0 +1,18 @@
+# 1. Arquivos compilados e executaveis
+*.exe
+*.o
+*.out
+*.app
+*.obj
+resgate
+
+# 2. Diretorios de IDEs e Editores
+.vscode/
+.idea/
+*.suo
+*.sln
+cmake-build-*/
+
+# 3. Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
