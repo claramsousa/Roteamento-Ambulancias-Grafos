@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
-#include "Grafo.h"
-#include "Algoritmos.h"
+#include "../include/Grafo.h"
+#include "../include/Algoritmos.h"
 
 using namespace std;
 
@@ -34,7 +34,7 @@ int lerSetorValido(string tipo) {
 int main() {
     Grafo hospitalGrafo(20);
 
-    if (!hospitalGrafo.carregarDatasetDeCSV("dataset_rotas.csv")) {
+    if (!hospitalGrafo.carregarDatasetDeCSV("data/dataset_rotas.csv")) {
         cout << "Fechando o sistema devido a erro de leitura.\n";
         return 1; 
     }
