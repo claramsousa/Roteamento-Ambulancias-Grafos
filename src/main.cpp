@@ -39,7 +39,7 @@ int main() {
     Grafo hospitalGrafo(20);
 
 
-    if (!hospitalGrafo.carregarDatasetDeCSV("data/dataset_rotas.csv")) {
+    if (!hospitalGrafo.carregarDatasetDeCSV("../data/dataset_rotas.csv")) {
         cout << "Fechando o sistema devido a erro de leitura.\n";
         return 1;
     }
