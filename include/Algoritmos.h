@@ -19,7 +19,11 @@ using namespace std;
 
 int executarDijkstra(const vector<vector<pair<int, int>>>& listaAdj, int origem, int destino);
 
-int executarBellmanFord(const vector<vector<pair<int, int>>>& listaAdj, int origem, int destino);
+// Funções Bellman-Ford
+int executarBellmanFord(const vector<vector<pair<int, int>>>& listaAdj, int origem, int destino, vector<int>& predecessores);
+bool cicloNegativo(int numVertices, const vector<vector<pair<int, int>>>& listaAdj, const vector<int>& distancias);
+void imprimirCaminho(int origem, int destino, const vector<int>& predecessores);
+void construirCaminho(int vertice, const vector<int>& predecessores);
 
 vector<vector<int>> executarFloydWarshall(const vector<vector<int>>& matrizAdjOriginal);
 
