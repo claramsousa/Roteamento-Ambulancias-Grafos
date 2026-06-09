@@ -38,6 +38,8 @@ int executarBellmanFord(const vector<vector<pair<int, int>>>& listaAdj, int orig
     
     if(distancias[destino] != INF) {
         imprimirCaminho(origem, destino, predecessores);
+    } else {
+        cout << "ALERTA: Nao ha caminho viavel ate o destino!\n";
     }
    
     return distancias[destino];
